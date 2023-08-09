@@ -1,10 +1,14 @@
 let menu = document.querySelector("#menu-btn");
 let navbar = document.querySelector(".navbar");
 
-menu.onClick(() => {
-  menu.classList.toggle("fa-times");
-  navbar.classList.toggle("active");
+document.addEventListener("DOMContentLoaded", function () {
+  // Your code here
+  menu.onclick = function () {
+    menu.classList.toggle("fa-times");
+    navbar.classList.toggle("active");
+  };
 });
+
 // menu.classList.toggle('fa-times');
 // navbar.classList.toggle('active');
 
